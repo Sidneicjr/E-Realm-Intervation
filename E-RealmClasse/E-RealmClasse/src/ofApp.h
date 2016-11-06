@@ -1,8 +1,10 @@
 #pragma once
-
 #include "ofMain.h"
+#include "Player.h"
+#include "Enemy.h"
 
-class ofApp : public ofBaseApp{
+class ofApp : public ofBaseApp
+{
 
 	public:
 		void setup();
@@ -20,5 +22,7 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+		Player p1;
+		Enemy e1;
 		
 };
